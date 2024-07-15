@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="icon">
+                <h2>FastConvert</h2>
+            </div>
+        </div>
+    </header>
+    <h1>Video Inter Converter</h1>
+    <div class="main">
+        <form action="/upload" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <input type="file" name="videoFile"  accept=".mp4,.mkv,.mov,.webm,.avi" required />
+            <div class="form-group">
+                <label for="videoFormat">Video Format:</label>
+                <select id="videoFormat" name="videoFormat" class="dropdown" required>
+                    <option value="mp4">MP4</option>
+                    <option value="mov">MOV</option>
+                    <option value="mkv">MKV</option>
+                    <option value="webm">WEBM</option>
+                </select>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="error-message" style="display: none; color: red;">Please select a video file.</div>
+        <div id="download-link" style="display: none;">
+            <a id="video-link" href="#" download>Download Converted Video</a>
+            <button id="convert-more-button">Convert More</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

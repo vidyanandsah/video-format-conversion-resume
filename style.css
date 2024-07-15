@@ -1,0 +1,123 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background: #191023;
+    padding-inline: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding-top: 14px;
+    padding-bottom: 19px;
+    border: .738px solid rgba(240, 150, 255, .2);
+    z-index: 2;
+}
+
+.icon {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 4%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input file styling */
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Select dropdown styling */
+.dropdown {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Button styling */
+button[type="submit"],
+
+button[oneclick] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+button[oneclick]:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+#error-message {
+    display: none;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Download link container styling */
+#download-link {
+    display: none;
+    margin-top: 20px;
+}
+
+#convert-more-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#convert-more-button:hover {
+    background-color: #e0a800;
+}
